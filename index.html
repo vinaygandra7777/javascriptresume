@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .listtype{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        var head = document.createElement("div")
+        var heading = document.createElement("h1");
+        heading.innerText="Gandra Vinay Kumar Reddy";
+        heading.style.textAlign="center";
+        var list = document.createElement("ul")
+        var listitem = document.createElement("li");
+        var listitem1 = document.createElement("li")
+        var listitem2 = document.createElement("li")
+        list.append(listitem,listitem1,listitem2)
+        head.append(heading,list)
+        console.log(head)
+        listitem.innerText="Phone:9014583641";
+        listitem.style.textAlign="center";
+        listitem.style.listStyleType="none";
+        listitem1.innerText="email:vinaygandra7777@gmail.com";
+        listitem1.style.textAlign="center";
+        listitem1.style.listStyleType="none";
+        listitem2.innerText="linkedin:https://www.linkedin.com/in/gandra-vinay-297376266/";
+        listitem2.style.textAlign="center";
+        listitem2.style.listStyleType="none";
+        var objective = document.createElement("div")
+        var cobjective = document.createElement('h1');
+        cobjective.innerText="Carrier Objective";
+        var para = document.createElement('p');
+        para.innerText="Aspiring Full Stack Developer seeking to leverage strong foundational skills in HTML5, CSS, JavaScript, andback-end technologies to develop innovative web applications. Committed to continuous learning and collaboration to contribute effectively to team projects and deliver high-quality software solutions."
+        objective.append(cobjective,para)
+        console.log(objective)
+        var educat = document.createElement("div")
+        var educ = document.createElement("h1");
+        educ.innerText ="Education";
+        var education = document.createElement('p');
+        education.innerText="Bachelor of Technology (Electrical and Communication Engineering):                                              CGPA: 8.59    Sreenidhi Institute of Science and Technology, Hyderabad.                                                                                                  2020 – 2024  Relevant Coursework: Data structures and Algorithms, Database Management Systems "
+        educat.append(educ,education);
+        console.log(educat)
+        var technical = document.createElement("div");
+        var tech1 = document.createElement('h1');
+        tech1.innerText = "Techincal skills";
+        var tech2 = document.createElement('ul');
+        var tech2a = document.createElement("li")
+        var tech2b = document.createElement('li');
+        var tech2c = document.createElement('li');
+        var tech2d = document.createElement('li');
+        tech2.append(tech2a,tech2b,tech2c,tech2d)
+        technical.append(tech1,tech2)
+        console.log(technical)
+        tech2a.innerHTML ="Programming Languages:                Python, JavaScript"
+        tech2b.innerText="UI Technologies:                                   HTML5, CSS3, BOOTSTRAP5, JavaScript"
+        tech2c.innerText="Databases:                                                SQL, Mongodb "
+        tech2d.innerText="Tools:                                                          Git, Github, Vscode"
+        var project = document.createElement("div");
+        var project2 = document.createElement("h1")
+        project2.innerText="Projects"
+        var project1 = document.createElement("ul");
+        var project1a = document.createElement('li');
+        var project1b = document.createElement('li');
+        var project1c = document.createElement('li');
+        project1.append(project1a,project1b,project1c);
+        project.append(project2,project1)
+        project1a.innerText="Project Title: THE BURGER BOX Technologies Used: HTML5, CSS3 Project Description: The Burger Box is a responsive web application designed to showcase a modern burger restaurant’s menu and services. The project emphasizes clean design and user-friendly navigation, providing visitors with an engaging experience. Link: https://vinaygandra7777.github.io/BurgerBox/";
+        project1b.innerText="Project Title: THE LUMIN SERUM Project Description: Developed a responsive website for the Lumin Serum brand using HTML, CSS, and  Bootstrap. Showcased product features with clean, structured design and ensured seamless display across devices. Link: https://vinaygandra7777.github.io/serum/";
+        project1c.innerHTML="Efficient ML technique to predict the quality of white wine. Utilized Random Forest Regression, robust machine learning technique, to predict the quality of white wine accurately.  Leveraged strong analytical skills and data preprocessing techniques to handle complex datasets effectively "
+        console.log(project)
+        var softskill = document.createElement("div");
+        var softskill1 = document.createElement('h1')
+        softskill1.innerText="Softskills";
+        var softskill2 = document.createElement("ul");
+        var softskill2a = document.createElement("li")
+        var softskill2b = document.createElement("li")
+        var softskill2c = document.createElement("li")
+        var softskill2d = document.createElement("li")
+        softskill2.append(softskill2a,softskill2b,softskill2c,softskill2d)
+        softskill.append(softskill1,softskill2);
+        softskill2a.innerText="Problem-solving";
+        softskill2b.innerText="Leadership (Start Club [Project leader]) "
+        softskill2c.innerText="Good Communication skills "
+        softskill2d.innerText="Time Management"
+        document.body.append(head,objective,educat,technical,project,softskill)
+    </script>
+    
+</body>
+
+</html>
